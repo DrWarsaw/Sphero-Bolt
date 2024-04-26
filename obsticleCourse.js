@@ -14,3 +14,12 @@ async function startProgram() {
 	await delay(1)
 	await roll((getHeading() + 90), 50, 1);
 	await delay(1)
+	
+	// Travis Ralph - Pc 20 Checkpoint Two
+	await roll((getHeading() - 90), 50, 1.5);
+	await delay(1)
+	await roll((getHeading() - 90), 50, 0.1);
+	await delay(1)
+
+	
+
