@@ -1,4 +1,4 @@
-///Programmer: Travis Ralph
+//Programmer: Travis Ralph
 //Team Member: Julian Granger
 //Bolt ID:183F
 //Date: 4.30.2024
@@ -18,8 +18,9 @@
 			setMainLed({ r: 0, g: 0, b: 255 });
 
 
-			// Programmer:  - Sound One Checkpoint Commit - Date:
-
+			// Programmer: Travis Ralph - Sound One Checkpoint Commit - Date:
+			await roll((getHeading() + 90), 80, 1);
+			await Sound.EightBit.Drop.play(true);
 
 
 			// Programmer:  - Red LED Checkpoint Commit - Date:
