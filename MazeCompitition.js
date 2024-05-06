@@ -14,12 +14,12 @@
 
 
 		// Programmer:  Julian Granger - Blue LED Checkpoint Commit - Date: 5/2/24
-			await roll((getHeading() + 0), 80, 2);
+			await roll((getHeading() + 0), 80, 1.85);
 			setMainLed({ r: 0, g: 0, b: 255 });
 
 
-			// Programmer: Travis Ralph - Sound One Checkpoint Commit - Date:
-			await roll((getHeading() + 90), 80, 1);
+			// Programmer: Travis Ralph - Sound One Checkpoint Commit - Date: 5/3/24
+			await roll((getHeading() + 90), 80, 1.2);
 			await Sound.EightBit.Drop.play(true);
 
 
