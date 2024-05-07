@@ -1,3 +1,4 @@
+
 //Programmer: Travis Ralph
 //Team Member: Julian Granger
 //Bolt ID:183F
@@ -24,11 +25,11 @@
 			await delay(1);
 
 			// Programmer: Julian Granger - Red LED Checkpoint Commit - Date: 5/6/24
-			await roll((getHeading() + 90), 70, 0.9);
+			await roll((getHeading() + 90), 70, 1);
 			await delay(1);
 			await roll((getHeading() + 40), 70, 1);
 			await delay(1);
-			await roll((getHeading() - 100), 80, 0.65);
+			await roll((getHeading() - 100), 80, 0.6);
 			await delay(1);
 			setMainLed({ r: 255, g: 0, b: 0 });
 			await delay(1)
@@ -36,16 +37,19 @@
 			// Programmer: Travis Ralph - Sound Two Checkpoint Commit - Date: 5/7/24
 			await roll((getHeading() - 80), 70, 1);
 			await delay(1);
-			await roll((getHeading() + 90), 70, .55);
+			await roll((getHeading() + 90), 70, .6);
 			await Sound.EightBit.Chomp.play(true);
 			await delay(1) 
 
 
 
-			// Programmer:  - Green LED Checkpoint Commit - Date:
-
-
-
+			// Programmer: Julian Granger - Green LED Checkpoint Commit - Date:5/7/24
+			await roll((getHeading() + 90), 60, 0.9);
+			await delay(1)
+			await roll((getHeading() - 90), 60, 0.7);
+			setMainLed({ r: 0, g: 255, b: 0 });
+			await delay(1)
+			
 			// Programmer:  - Purple LED and Sound Three  Checkpoint Commit - Date:
 
 
